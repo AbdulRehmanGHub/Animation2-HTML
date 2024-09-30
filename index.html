@@ -1,24 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animation using HTML</title>
+    <title>Animation2 - HTML</title>
     <style>
-        body{
+        body {
             background-repeat: no-repeat;
-        background-size: 100% 100%;
-        background-attachment: fixed;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            background-position: center;
+            min-height: 100vh;
+        }
+
+        @media (min-width: 1300px) {
+            marquee {
+                margin-top: 40%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            marquee img:nth-child(1) {
+                width: 30%;
+            }
+
+            marquee img:nth-child(2) {
+                width: 17%;
+            }
+
+            marquee img:nth-child(3) {
+                width: 10%;
+            }
         }
     </style>
 </head>
+
 <body background="images/bg.jpg">
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <marquee direction="right" scrollamount = "25">
-        <img src = "images/a.gif" width="22%">&emsp;&emsp;&emsp;&emsp;
-        <img src = "images/b.gif" width="11%">&emsp;&emsp;&emsp;
-        <img src = "images/c.gif" width="4%">&nbsp;
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <marquee direction="right" scrollamount="15">
+        <img src="images/a.gif" width="22%">&emsp;&emsp;&emsp;&emsp;
+        <img src="images/b.gif" width="11%">&emsp;&emsp;&emsp;
+        <img src="images/c.gif" width="4%">&nbsp;
     </marquee>
 </body>
+
 </html>
